@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor:#c1ab84;
+    --mainFont: "Playwrite CU", cursive;
+    --subFont: "Dancing Script", cursive;
+}
+/* Nav*/
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.24);
+
+}
+nav img{
+    width: 150px;
+    
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+nav .container{
+    display: flex;
+}
+nav .container .start{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+nav .container .end{
+    width: 40%;
+}
+.NavList{
+    width: 100%;
+}
+.NavList ul{
+    display: flex;
+    justify-content: space-between;
+}
+.NavList ul li{
+    list-style-type: none;
+}
+nav .container .end{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Header*/
+
+header{
+    background-image: url('background.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    gap: 20px;
+}
+.head img{
+    width: 400px;
+    height: 200px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.buttons button{
+    padding: 20px;
+    border-radius: 5px;
+}
+.head h1{
+    font-size: 80px;
+    font-weight: 20;
+    font-family: "Playwrite CU", cursive;
+
+}
+
+.head p{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+}
+button:hover{
+    background-color: bisque;
+}
+.buttons button:first-of-type{
+    background-color: bisque;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #403d38;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #969696;
+}
+footer .MainFooter{
+    background-color: #403d38;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer .SubFooter{
+    background-color: #353330;
+}
+footer .SubFooter .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+footer h3{
+    color: rgb(205, 205, 205);
+    font-family: var(--mainFont);
+}
+footer ul li{
+    border-bottom: 2px solid rgb(124, 124, 124);
+}
+ul li:last-of-type{
+    border: none;
+}
+.FooterSec1,.FooterSec4{
+    width: 25%;
+}
+.FooterSec4 ul li{
+    display: flex;
+    gap: 10px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+.icons .icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #484540;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.icons .icon i{
+    font-size: 30px;
+
+}
+.FooterSec4{
+    background-image: url(earth.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y:center;
+}
+.Sec{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+.Sec ul{
+    
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer img{
+    width: 400px;
+}
+footer a{
+    color: #969696;
+}
+
+/* Section 1 */
+
+.Info{
+    display: flex;
+    justify-content: center;
+}
+.ImageInfo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.DataInfo{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.Info p{
+    font-family: var(--subFont);
+}
+.Info .container{
+    display: flex;
+   justify-content: center;
+}
+.DataInfo ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.DataInfo li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.DataInfo ul li .item i{
+    background-color: #c1ab84;
+    border-radius: 50%;
+    padding: 15px;
+
+}
+.DataInfo .pa{
+    color: var(--maincolor);
+    font-size: 25px;
+}
+.DataInfo .pa2{
+    font-family: var(--mainFont);
+    font-weight: 500;
+
+}
+.DataInfo h2{
+    font-size: 35px;
+    font-family: var(--mainFont);
+}
+ul{
+    list-style: none;
+}
+/* Section 2*/
+.ImageInfoRev img{
+    width: 400px;
+    height: 330px;
+}
+.Review{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+.ImageInfoRev{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.DataInfoRev{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.Review p{
+    font-family: var(--subFont);
+}
+.Review .container{
+    display: flex;
+   justify-content: center;
+}
+.DataInfoRev ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.DataInfoRev li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.DataInfoRev .pa{
+    color: var(--maincolor);
+    font-size: 25px;
+}
+.DataInfoRev .pa2{
+    font-family: var(--mainFont);
+    font-weight: 500;
+
+}
+.DataInfoRev h2{
+    font-size: 35px;
+    font-family: var(--mainFont);
+}
+.Sec3 img{
+    width: 100%;
+    height: 500px;
+}
